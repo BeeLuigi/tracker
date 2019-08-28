@@ -613,7 +613,7 @@ for (i = 1; i <= 4; i++) {
 	Game.crater_top = Game.crater_by_city || Game.hammer;
 	Game.can_enter_adult_spirit = Game.can_enter_colossus && Game.silver_gauntlets;
 	Game.can_enter_ganons = Game.forest_medallion && Game.fire_medallion && Game.water_medallion && Game.gen1 && Game.gen2 && Game.gen3;
-	Game.can_climb_fire_temple = Game.can_enter_fire_temple && game.current_fire_keys >=3 && (Game.bow || Game.hookshot || Game.bomb_bag);
+	Game.can_climb_fire_temple = Game.can_enter_fire_temple && Game.current_fire_keys >=3 && (Game.bow || Game.hookshot || Game.bomb_bag);
 	Game.can_enter_water = (Game.hookshot && Game.iron_boots) || (Game.longshot && Game.golden_scale);
 	Game.middle_water = Game.can_enter_water && Game.lullaby && (Game.bow || Game.can_use_dins);
 	Game.projectile_both = Game.bomb_bag || Game.has_chus || ((Game.slingshot || Game.boomerang) && (Game.bow || Game.hookshot));
