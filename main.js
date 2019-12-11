@@ -78,7 +78,7 @@ function Update() {
 			document.getElementById("bottleimg").src= Game.bottle_img;
 			document.getElementById("slingshotimg").src= Game.slingshot_img;
 			document.getElementById("goldengauntletsimg").src= Game.golden_gauntlets_img;
-			
+
 			var all = document.getElementsByClassName('songpics');
 			for (var i = 0; i < all.length; i++) {
 			all[i].style.width="26px";
@@ -331,80 +331,80 @@ function Update() {
 	}
 
 	if(Known.kokiri_sword == true) {Logic.kokiri_sword = Location_Logic[Location.kokiri_sword];}
-	
+
 	if(Known.farores_wind == true) {Logic.farores_wind = Location_Logic[Location.farores_wind];} else{Logic.farores_wind = false;}
-	
-	if(Known.slingshot1 == true) {Logic.slingshot1 = Location_Logic[Location.slingshot1];} 
+
+	if(Known.slingshot1 == true) {Logic.slingshot1 = Location_Logic[Location.slingshot1];}
 	if(Known.slingshot2 == true) {Logic.slingshot2 = Location_Logic[Location.slingshot2];}
 	if(Known.slingshot3 == true) {Logic.slingshot3 = Location_Logic[Location.slingshot3];}
 	Logic.slingshot = Logic.slingshot1 || Logic.slingshot2 || Logic.slingshot3;
-	
+
 	if(Known.boomerang == true) {Logic.boomerang = Location_Logic[Location.boomerang];} else{Logic.boomerang = false;}
-	
+
 	if(Known.rutos_letter == true) {Logic.rutos_letter = Location_Logic[Location.rutos_letter];} else{Logic.rutos_letter = false;}
 	if(Known.bottle1 == true) {Logic.bottle1 = Location_Logic[Location.bottle1];}
 	if(Known.bottle2 == true) {Logic.bottle2 = Location_Logic[Location.bottle2];}
 	if(Known.bottle3 == true) {Logic.bottle3 = Location_Logic[Location.bottle3];}
 	Logic.bottle = (Logic.rutos_letter && ((Logic.bomb_bag && Logic.lullaby) || Logic.silver_scale)) || Logic.bottle1 || Logic.bottle2 || Logic.bottle3;
-	
+
 	if(Known.scale1 == true) {Logic.scale1 = Location_Logic[Location.scale1]; }
 	if(Known.scale2 == true) {Logic.scale2 = Location_Logic[Location.scale2]; }
 	if(Game.scale2 == true) {document.getElementById("silverscaleimg").src = Game.golden_scale_img;}
 	Logic.silver_scale = Logic.scale1 || Logic.scale2;
 	Logic.golden_scale = Logic.scale1 && Logic.scale2;
-	
+
 	if(Known.bomb_bag1 == true) {Logic.bomb_bag1 = Location_Logic[Location.bomb_bag1];}
 	if(Known.bomb_bag2 == true) {Logic.bomb_bag2 = Location_Logic[Location.bomb_bag2];}
 	if(Known.bomb_bag3 == true) {Logic.bomb_bag3 = Location_Logic[Location.bomb_bag3];}
 	Logic.bomb_bag = Logic.bomb_bag1 || Logic.bomb_bag2 || Logic.bomb_bag3;
-	
+
 	if(Known.hammer == true) {Logic.hammer = Location_Logic[Location.hammer];} else{Logic.hammer= false;}
-	
+
 	if(Known.bow1 == true) {Logic.bow1 = Location_Logic[Location.bow1];}
 	if(Known.bow2 == true) {Logic.bow2 = Location_Logic[Location.bow2];}
 	if(Known.bow3 == true) {Logic.bow3 = Location_Logic[Location.bow3];}
 	Logic.bow = Logic.bow1 || Logic.bow2 || Logic.bow3;
-	
+
 	if(Known.hookshot1 == true) {Logic.hookshot1 = Location_Logic[Location.hookshot1];}
 	if(Known.hookshot2 == true) {Logic.hookshot2 = Location_Logic[Location.hookshot2];}
 	Logic.hookshot = Logic.hookshot1 || Logic.hookshot2;
 	Logic.longshot = Logic.hookshot1 && Logic.hookshot2;
-	
+
 	if(Known.strength1 == true) {Logic.strength1 = Location_Logic[Location.strength1];}
 	if(Known.strength2 == true) {Logic.strength2 = Location_Logic[Location.strength2];}
 	if(Known.strength3 == true) {Logic.strength3 = Location_Logic[Location.strength3];}
 	Logic.goron_bracelet = Logic.strength1 || Logic.strength2 || Logic.strength3;
 	Logic.silver_gauntlets = (Logic.strength1 && Logic.strength2) || (Logic.strength1 && Logic.strength3) || (Logic.strength2 && Logic.strength3)
 	Logic.golden_gauntlets = Logic.strength1 && Logic.strength2 && Logic.strength3;
-	
+
 	if(Known.mirror_shield == true) {Logic.mirror_shield = Location_Logic[Location.mirror_shield];} else{Logic.mirror_shield = false;}
-	
+
 	if(Known.big_poe == true) {Logic.big_poe = Location_Logic[Location.big1];} else{Logic.big_poe= false;}
-	
+
 	if(Known.iron_boots == true) {Logic.iron_boots = Location_Logic[Location.iron_boots];} else{Logic.iron_boots = false;}
 	if(Known.hover_boots == true) {Logic.hover_boots = Location_Logic[Location.hover_boots];} else{Logic.hover_boots = false;}
-	
+
 	if(Known.magic1 == true) {Logic.magic1 = Location_Logic[Location.magic1];}
 	if(Known.magic2 == true) {Logic.magic2 = Location_Logic[Location.magic2];}
 	Logic.magic = Logic.magic1 || Logic.magic2;
-	
+
 	if(Known.dins_fire == true) {Logic.dins_fire = Location_Logic[Location.dins_fire];} else{Logic.dins_fire = false;}
 	if(Known.fire_arrows == true) {Logic.fire_arrows = Location_Logic[Location.fire_arrows];} else{Logic.fire_arrows = false;}
-	
+
 	if(Known.wallet1 == true) {Logic.wallet1 = Location_Logic[Location.wallet1];}
 	if(Known.wallet2 == true) {Logic.wallet2 = Location_Logic[Location.wallet2];}
 	Logic.adults_wallet = Logic.wallet1 || Logic.wallet2;
 	Logic.giants_wallet = Logic.wallet1 && Logic.wallet2;
-	
+
 	if(Known.goron_tunic == true) {Logic.goron_tunic = Location_Logic[Location.goron_tunic];} else{Logic.goron_tunic = false;}
 	if(Known.zora_tunic == true) {Logic.zora_tunic = Location_Logic[Location.zora_tunic];} else{Logic.zora_tunic = false;}
 	if(Known.lens_of_truth == true) {Logic.lens_of_truth = Location_Logic[Location.lens_of_truth];} else{Logic.lens_of_truth = false;}
 	if(Known.stone_of_agony == true) {Logic.stone_of_agony = Location_Logic[Location.stone_of_agony];} else{Logic.stone_of_agony = false;}
 	if(Known.prescription == true) {Logic.prescription = Location_Logic[Location.prescription];} else{Logic.prescription = false;}
 	if(Known.claim_check == true) {Logic.claim_check = Location_Logic[Location.claim_check];} else{Logic.claim_check = false;}
-	
+
 	if(Known.light_arrows == true) {Logic.light_arrows = Location_Logic[Location.light_arrows];}
-	
+
 	if(Known.lullaby == true) {Logic.lullaby = Location_Logic[Location.lullaby]; }
 	if(Known.eponas == true) {Logic.eponas = Location_Logic[Location.eponas]; }
 	if(Known.sarias == true) {Logic.sarias = Location_Logic[Location.sarias]; }
@@ -417,7 +417,7 @@ function Update() {
 	if(Known.requiem == true) {Logic.requiem = Location_Logic[Location.requiem]; }
 	if(Known.nocturne == true) {Logic.nocturne = Location_Logic[Location.nocturne]; }
 	if(Known.prelude == true) {Logic.prelude = Location_Logic[Location.prelude]; }
-	
+
 	Logic.forest_boss_key = Logic.forced_forest_boss_key;
 	Logic.fire_boss_key = Logic.forced_fire_boss_key;
 	Logic.water_boss_key = Logic.forced_water_boss_key;
@@ -428,7 +428,7 @@ function Update() {
 	if(Game.water_boss_key == true) {Logic.water_boss_key = Location_Logic[Location.water_boss_key]; }
 	if(Game.spirit_boss_key == true) {Logic.spirit_boss_key = Location_Logic[Location.spirit_boss_key]; }
 	if(Game.shadow_boss_key == true) {Logic.shadow_boss_key = Location_Logic[Location.shadow_boss_key]; }
-	
+
 	if(Logic.forest_medallion_location == "deku") {if (document.getElementById("deku_queen_gohma") == null) {Game.forest_medallion = true;} Logic.forest_medallion = Location_Logic.deku_queen_gohma;}
 	if(Logic.forest_medallion_location == "dodongos") {if (document.getElementById("dodongos_king_dodongo") == null) {Game.forest_medallion = true;} Logic.forest_medallion = Location_Logic.dodongos_king_dodongo;}
 	if(Logic.forest_medallion_location == "jabu") {if (document.getElementById("jabu_barinade") == null) {Game.forest_medallion = true;} Logic.forest_medallion = Location_Logic.jabu_barinade;}
@@ -438,7 +438,7 @@ function Update() {
 	if(Logic.forest_medallion_location == "spirit") {if (document.getElementById("spirit20") == null) {Game.forest_medallion = true;} Logic.forest_medallion = Location_Logic.spirit20;}
 	if(Logic.forest_medallion_location == "shadow") {if (document.getElementById("shadow18") == null) {Game.forest_medallion = true;} Logic.forest_medallion = Location_Logic.shadow18;}
 	if(Logic.forest_medallion_location == "pocket") {Game.forest_medallion = true; Logic.forest_medallion = true;}
-	
+
 	if(Logic.fire_medallion_location == "deku") {if (document.getElementById("deku_queen_gohma") == null) {Game.fire_medallion = true;} Logic.fire_medallion = Location_Logic.deku_queen_gohma;}
 	if(Logic.fire_medallion_location == "dodongos") {if (document.getElementById("dodongos_king_dodongo") == null) {Game.fire_medallion = true;} Logic.fire_medallion = Location_Logic.dodongos_king_dodongo;}
 	if(Logic.fire_medallion_location == "jabu") {if (document.getElementById("jabu_barinade") == null) {Game.fire_medallion = true;} Logic.fire_medallion = Location_Logic.jabu_barinade;}
@@ -448,7 +448,7 @@ function Update() {
 	if(Logic.fire_medallion_location == "spirit") {if (document.getElementById("spirit20") == null) {Game.fire_medallion = true;} Logic.fire_medallion = Location_Logic.spirit20;}
 	if(Logic.fire_medallion_location == "shadow") {if (document.getElementById("shadow18") == null) {Game.fire_medallion = true;} Logic.fire_medallion = Location_Logic.shadow18;}
 	if(Logic.fire_medallion_location == "pocket") {Game.fire_medallion = true; Logic.fire_medallion = true;}
-	
+
 	if(Logic.water_medallion_location == "deku") {if (document.getElementById("deku_queen_gohma") == null) {Game.water_medallion = true;} Logic.water_medallion = Location_Logic.deku_queen_gohma;}
 	if(Logic.water_medallion_location == "dodongos") {if (document.getElementById("dodongos_king_dodongo") == null) {Game.water_medallion = true;} Logic.water_medallion = Location_Logic.dodongos_king_dodongo;}
 	if(Logic.water_medallion_location == "jabu") {if (document.getElementById("jabu_barinade") == null) {Game.water_medallion = true;} Logic.water_medallion = Location_Logic.jabu_barinade;}
@@ -474,7 +474,7 @@ function Update() {
 		if(Logic[str] == "shadow") {if (document.getElementById("shadow18") == null) {Game[str2] = true;} Logic[str2] = Location_Logic.shadow18; if(document.getElementById("text_shadow").style.color=="rgb(238, 130, 238)") {Logic.shadow_medallion = Location_Logic.shadow18;} if(document.getElementById("text_shadow").style.color=="rgb(255, 165, 0)") {Logic.spirit_medallion = Location_Logic.shadow18;}}
 		if(Logic[str] == "pocket") {Game[str2] = true; Logic[str2] = true; if(document.getElementById("text_pocket").style.color=="rgb(238, 130, 238)") {Logic.shadow_medallion = true;} if(document.getElementById("text_pocket").style.color=="rgb(255, 165, 0)") {Logic.spirit_medallion = true;}}
 	}
-	
+
 	if(Logic.emerald == "deku") {Logic.kokiri_emerald = Location_Logic.deku_queen_gohma;}
 	if(Logic.emerald == "dodongos") {Logic.kokiri_emerald = Location_Logic.dodongos_king_dodongo;}
 	if(Logic.emerald == "jabu") {Logic.kokiri_emerald = Location_Logic.jabu_barinade;}
@@ -484,7 +484,7 @@ function Update() {
 	if(Logic.emerald == "spirit") {Logic.kokiri_emerald = Location_Logic.spirit20;}
 	if(Logic.emerald == "shadow") {Logic.kokiri_emerald = Location_Logic.shadow18;}
 	if(Logic.emerald == "pocket") {Logic.kokiri_emerald = true;}
-	
+
 	if(Logic.ruby == "deku") {Logic.goron_ruby = Location_Logic.deku_queen_gohma;}
 	if(Logic.ruby == "dodongos") {Logic.goron_ruby = Location_Logic.dodongos_king_dodongo;}
 	if(Logic.ruby == "jabu") {Logic.goron_ruby = Location_Logic.jabu_barinade;}
@@ -494,7 +494,7 @@ function Update() {
 	if(Logic.ruby == "spirit") {Logic.goron_ruby = Location_Logic.spirit20;}
 	if(Logic.ruby == "shadow") {Logic.goron_ruby = Location_Logic.shadow18;}
 	if(Logic.ruby == "pocket") {Logic.goron_ruby = true;}
-	
+
 	if(Logic.sapphire == "deku") {Logic.zora_sapphire = Location_Logic.deku_queen_gohma;}
 	if(Logic.sapphire == "dodongos") {Logic.zora_sapphire = Location_Logic.dodongos_king_dodongo;}
 	if(Logic.sapphire == "jabu") {Logic.zora_sapphire = Location_Logic.jabu_barinade;}
@@ -504,8 +504,8 @@ function Update() {
 	if(Logic.sapphire == "spirit") {Logic.zora_sapphire = Location_Logic.spirit20;}
 	if(Logic.sapphire == "shadow") {Logic.zora_sapphire = Location_Logic.shadow18;}
 	if(Logic.sapphire == "pocket") {Logic.zora_sapphire = true;}
-	
-	
+
+
 	if(Logic.emerald == "unknown") {Logic.kokiri_emerald = false;}
 	if(Logic.ruby == "unknown") {Logic.goron_ruby = false;}
 	if(Logic.sapphire == "unknown") {Logic.zora_sapphire = false;}
@@ -594,13 +594,13 @@ for (i = 1; i <= 4; i++) {
 
 	for(var i = 0; i <= 36; i++){
 		str = checkSummary[i] + "_location";
-		
+
 		if (checkSummary[i] == "trade" && (Logic.prescription || Logic.claim_check)) {var exception = true;} else {var exception = false;}
-		
+
 		if (Logic[checkSummary[i]] || exception) {document.getElementById(str).className = "logic_check_text2";}
 		else {document.getElementById(str).className = "ool_check_text2";}
 	}
-	
+
 	Logic.can_enter_jabu = Logic.rutos_letter && ((Logic.lullaby && Logic.bomb_bag) || Logic.silver_scale) && (Logic.boomerang || Logic.bomb_bag || Logic.slingshot);
 	Logic.child_can_enter_river = Logic.bomb_bag || Logic.silver_scale;
 	Logic.fortress_access = Logic.eponas || Logic.longshot;
@@ -627,7 +627,7 @@ for (i = 1; i <= 4; i++) {
 	Logic.crater_by_city = Logic.bow || Logic.bomb_bag || Logic.goron_bracelet || Logic.reverse_crater ||(Logic.hammer && Logic.hover_boots) || (Logic.longshot && Logic.goron_tunic && Logic.hammer);
 	Logic.crater_top = Logic.crater_by_city || Logic.hammer;
 	Logic.can_enter_adult_spirit = Logic.can_enter_colossus && Logic.silver_gauntlets;
-	Logic.can_enter_ganons = Logic.forest_medallion && Logic.fire_medallion && Logic.water_medallion && Logic.gen1 && Logic.gen2 && Logic.gen3;
+	Logic.can_enter_ganons = Logic.goron_ruby && Logic.kokiri_emerald && Logic.zora_sapphire;
 	Logic.can_climb_fire_temple = Logic.can_enter_fire_temple && Logic.fire_keys >=3 && Logic.can_wear_goron_tunic && Logic.goron_bracelet && (Logic.bow || Logic.hookshot || Logic.bomb_bag);
 	Logic.can_enter_water = Logic.hookshot && Logic.iron_boots;
 	Logic.middle_water = Logic.can_enter_water && Logic.lullaby && (Logic.bow || Logic.can_use_dins);
@@ -674,7 +674,7 @@ for (i = 1; i <= 4; i++) {
 	Game.can_wear_zora_tunic = true;
 	Game.can_climb_gtg_hole = Game.hookshot1 || Game.hover_boots || Game.bomb_bag1;
 	Game.giants_wallet = Game.wallet1 && Game.wallet2;
-	
+
 	Logic.current_forest_keys = Logic.forced_forest_keys;
 	for (i = 1; i <= 14; i++) {
 		str = "forest" + i;
@@ -685,43 +685,43 @@ for (i = 1; i <= 4; i++) {
 		str = "fire" + i;
 		if (Check[str] == "small_key" && Location_Logic[str]) {Logic.current_fire_keys +=1;}
 	}
-	
+
 	Logic.current_water_keys = Logic.forced_water_keys;
 	for (i = 1; i <= 11; i++) {
 		str = "water" + i;
 		if (Check[str] == "small_key" && Location_Logic[str]) {Logic.current_water_keys +=1;}
 	}
-	
+
 	Logic.current_spirit_keys = Logic.forced_spirit_keys;
 	for (i = 1; i <= 20; i++) {
 		str = "spirit" + i;
 		if (Check[str] == "small_key" && Location_Logic[str]) {Logic.current_spirit_keys +=1;}
 	}
-	
+
 	Logic.current_shadow_keys = Logic.forced_shadow_keys;
 	for (i = 1; i <= 18; i++) {
 		str = "shadow" + i;
 		if (Check[str] == "small_key" && Location_Logic[str]) {Logic.current_shadow_keys +=1;}
 	}
-	
+
 	Logic.current_ganons_keys = Logic.forced_ganons_keys;
 	for (i = 1; i <= 16; i++) {
 		str = "ganons" + i;
 		if (Check[str] == "small_key" && Location_Logic[str]) {Logic.current_ganons_keys +=1;}
 	}
-	
+
 	Logic.current_gtg_keys = Logic.forced_gtg_keys;
 	for (i = 1; i <= 22; i++) {
 		str = "gtg" + i;
 		if (Check[str] == "small_key" && Location_Logic[str]) {Logic.current_gtg_keys +=1;}
 	}
-	
+
 	Logic.current_well_keys = Logic.forced_well_keys;
 	for (i = 1; i <= 14; i++) {
 		str = "well" + i;
 		if (Check[str] == "small_key" && Location_Logic[str]) {Logic.current_well_keys +=1;}
 	}
-	
+
 	if (Logic.current_forest_keys < 5) {
 		var for_keys = [[1,2,3,4,5], [6,8], [7], [9,10,11]]
 		var done = false;
@@ -931,57 +931,57 @@ for (i = 1; i <= 4; i++) {
 		hinted = true;
 		document.getElementById(key).value = document.getElementById(key).value.toLowerCase();
 	}
-	if (temp <= 244) { 
- 
+	if (temp <= 244) {
+
 	if (document.getElementById(key).value == "far" && !Game.farores_wind) {Check[document.getElementById(key).id] = "farores_wind"; Location.farores_wind = document.getElementById(key).id; document.getElementById("farores_wind_location").innerHTML = "Farores -> " + Names[temp-1]; Known.farores_wind = true; if (!hinted) {Game.farores_wind = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
-	
+
 	if (document.getElementById(key).value == "sli" && !Game.slingshot1) {Check[document.getElementById(key).id] = "slingshot"; Location.slingshot1 = document.getElementById(key).id; document.getElementById("slingshot1_location").innerHTML = "Slingshot -> " + Names[temp-1]; Known.slingshot1 = true; if (!hinted) {Game.slingshot1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "sli" && !Game.slingshot2) {Check[document.getElementById(key).id] = "slingshot"; Location.slingshot2 = document.getElementById(key).id; document.getElementById("slingshot2_location").innerHTML = "Slingshot -> " + Names[temp-1]; Known.slingshot2 = true; if (!hinted) {Game.slingshot2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "sli" && !Game.slingshot3) {Check[document.getElementById(key).id] = "slingshot";Location.slingshot3 = document.getElementById(key).id; document.getElementById("slingshot3_location").innerHTML = "Slingshot -> " + Names[temp-1]; Known.slingshot3 = true; if (!hinted) {Game.slingshot3 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
-	
+
 	if (document.getElementById(key).value == "boo" && !Game.boomerang) {Check[document.getElementById(key).id] = "boomerang"; Location.boomerang = document.getElementById(key).id; document.getElementById("boomerang_location").innerHTML = "Boomerang -> " + Names[temp-1]; Known.boomerang = true; if (!hinted) {Game.boomerang = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
-	
+
 	if (document.getElementById(key).value == "sca" && !Game.scale1) {Check[document.getElementById(key).id] = "scale"; Location.scale1 = document.getElementById(key).id; document.getElementById("scale1_location").innerHTML = "Scale -> " + Names[temp-1]; Known.scale1 = true; if (!hinted) {Game.scale1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "sca" && !Game.scale2) {Check[document.getElementById(key).id] = "scale";Location.scale2 = document.getElementById(key).id; document.getElementById("scale2_location").innerHTML = "Scale -> " + Names[temp-1]; Known.scale2 = true; if (!hinted) {Game.scale2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
-	
+
 	if (document.getElementById(key).value == "rut" && !Game.rutos_letter) {Check[document.getElementById(key).id] = "rutos_letter"; Location.rutos_letter = document.getElementById(key).id; document.getElementById("rutos_letter_location").innerHTML = "Letter -> " + Names[temp-1]; Known.rutos_letter = true; if (!hinted) {Game.rutos_letter = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
-	
+
 	if (document.getElementById(key).value == "bot" && !Game.bottle1) {Check[document.getElementById(key).id] = "bottle"; Location.bottle1 = document.getElementById(key).id; document.getElementById("bottle1_location").innerHTML = "Bottle -> " + Names[temp-1]; Known.bottle1 = true; if (!hinted) {Game.bottle1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "bot" && !Game.bottle2) {Check[document.getElementById(key).id] = "bottle"; Location.bottle2 = document.getElementById(key).id; document.getElementById("bottle2_location").innerHTML = "Bottle -> " + Names[temp-1]; Known.bottle2 = true; if (!hinted) {Game.bottle2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "bot" && !Game.bottle3) {Check[document.getElementById(key).id] = "bottle"; Location.bottle3 = document.getElementById(key).id; document.getElementById("bottle3_location").innerHTML = "Bottle -> " + Names[temp-1]; Known.bottle3 = true; if (!hinted) {Game.bottle3 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
-	
+
 	if (document.getElementById(key).value == "big" && !Game.bottle1) {Check[document.getElementById(key).id] = "big_poe";Location.bottle1 = document.getElementById(key).id; Location.big1= document.getElementById(key).id; document.getElementById("bottle1_location").innerHTML = "Big Poe -> " + Names[temp-1]; Known.bottle1 = true; Known.big_poe = true; if (!hinted) {Game.bottle1 = true; Game.big_poe = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "big" && !Game.bottle2) {Check[document.getElementById(key).id] = "big_poe"; Location.bottle2 = document.getElementById(key).id; Location.big1= document.getElementById(key).id; document.getElementById("bottle2_location").innerHTML = "Big Poe -> " + Names[temp-1]; Known.bottle1 = true; Known.big_poe = true; if (!hinted) {Game.bottle2 = true; Game.big_poe = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "big" && !Game.bottle3) {Check[document.getElementById(key).id] = "big_poe";Location.bottle3 = document.getElementById(key).id; Location.big1= document.getElementById(key).id; document.getElementById("bottle3_location").innerHTML = "Big Poe -> " + Names[temp-1]; Known.bottle1 = true; Known.big_poe = true; if (!hinted) {Game.bottle3 = true; Game.big_poe = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
-	
+
 	if (document.getElementById(key).value == "bom" && !Game.bomb_bag1) {Check[document.getElementById(key).id] = "bomb_bag"; Location.bomb_bag1 = document.getElementById(key).id; document.getElementById("bomb_bag1_location").innerHTML = "Bomb Bag -> " + Names[temp-1]; Known.bomb_bag1 = true; if (!hinted) {Game.bomb_bag1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))} continue;}
 	else if (document.getElementById(key).value == "bom" && !Game.bomb_bag2) {Check[document.getElementById(key).id] = "bomb_bag"; Location.bomb_bag2 = document.getElementById(key).id; document.getElementById("bomb_bag2_location").innerHTML = "Bomb Bag -> " + Names[temp-1]; Known.bomb_bag2 = true; if (!hinted) {Game.bomb_bag2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "bom" && !Game.bomb_bag3) {Check[document.getElementById(key).id] = "bomb_bag"; Location.bomb_bag3 = document.getElementById(key).id; document.getElementById("bomb_bag3_location").innerHTML = "Bomb Bag -> " + Names[temp-1]; Known.bomb_bag3 = true; if (!hinted) {Game.bomb_bag3 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "ham" && !Game.hammer) {Check[document.getElementById(key).id] = "hammer"; Location.hammer = document.getElementById(key).id; document.getElementById("hammer_location").innerHTML = "Hammer -> " + Names[temp-1]; Known.hammer = true; if (!hinted) {Game.hammer = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "bow" && !Game.bow1) {Check[document.getElementById(key).id] = "bow"; Location.bow1 = document.getElementById(key).id; document.getElementById("bow1_location").innerHTML = "Bow -> " + Names[temp-1]; Known.bow1 = true; if (!hinted) {Game.bow1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "bow" && !Game.bow2) {Check[document.getElementById(key).id] = "bow"; Location.bow2 = document.getElementById(key).id; document.getElementById("bow2_location").innerHTML = "Bow -> " + Names[temp-1]; Known.bow2 = true; if (!hinted) {Game.bow2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "bow" && !Game.bow3) {Check[document.getElementById(key).id] = "bow";Location.bow3 = document.getElementById(key).id; document.getElementById("bow3_location").innerHTML = "Bow -> " + Names[temp-1]; Known.bow3 = true; if (!hinted) {Game.bow3 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "hoo" && !Game.hookshot1) {Check[document.getElementById(key).id] = "hookshot";Location.hookshot1 = document.getElementById(key).id; document.getElementById("hookshot1_location").innerHTML = "Hookshot -> " + Names[temp-1]; Known.hookshot1 = true; if (!hinted) {Game.hookshot1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "hoo" && !Game.hookshot2) {Check[document.getElementById(key).id] = "hookshot";Location.hookshot2 = document.getElementById(key).id; document.getElementById("hookshot2_location").innerHTML = "Hookshot -> " + Names[temp-1]; Known.hookshot2 = true; if (!hinted) {Game.hookshot2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "str" && !Game.strength1) {Check[document.getElementById(key).id] = "strength"; Location.strength1 = document.getElementById(key).id; document.getElementById("strength1_location").innerHTML = "Strength -> " + Names[temp-1]; Known.strength1 = true; if (!hinted) {Game.strength1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "str" && !Game.strength2) {Check[document.getElementById(key).id] = "strength"; Location.strength2 = document.getElementById(key).id; document.getElementById("strength2_location").innerHTML = "Strength -> " + Names[temp-1]; Known.strength2 = true; if (!hinted) {Game.strength2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "str" && !Game.strength3) {Check[document.getElementById(key).id] = "strength";Location.strength3 = document.getElementById(key).id; document.getElementById("strength3_location").innerHTML = "Strength -> " + Names[temp-1]; Known.strength3 = true; if (!hinted) {Game.strength3 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "mir" && !Game.mirror_shield) {Check[document.getElementById(key).id] = "mirror_shield"; Location.mirror_shield = document.getElementById(key).id; document.getElementById("mirror_shield_location").innerHTML = "Mirror Shield -> " + Names[temp-1]; Known.mirror_shield = true; if (!hinted) {Game.mirror_shield = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "mag" && !Game.magic1) {Check[document.getElementById(key).id] = "magic"; Location.magic1 = document.getElementById(key).id; document.getElementById("magic1_location").innerHTML = "Magic -> " + Names[temp-1]; Known.magic1 = true; if (!hinted) {Game.magic1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "mag" && !Game.magic2) {Check[document.getElementById(key).id] = "magic"; Location.magic2 = document.getElementById(key).id; document.getElementById("magic2_location").innerHTML = "Magic -> " + Names[temp-1]; Known.magic2 = true; if (!hinted) {Game.magic2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "iro" && !Game.iron_boots) {Check[document.getElementById(key).id] = "iron_boots";Location.iron_boots = document.getElementById(key).id; document.getElementById("iron_boots_location").innerHTML = "Iron Boots -> " + Names[temp-1]; Known.iron_boots = true; if (!hinted) {Game.iron_boots = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	if (document.getElementById(key).value == "hov" && !Game.hover_boots) {Check[document.getElementById(key).id] = "hover_boots";Location.hover_boots = document.getElementById(key).id; document.getElementById("hover_boots_location").innerHTML = "Hover Boots -> " + Names[temp-1]; Known.hover_boots = true; if (!hinted) {Game.hover_boots = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "wal" && !Game.wallet1) {Check[document.getElementById(key).id] = "wallet";Location.wallet1 = document.getElementById(key).id; document.getElementById("wallet1_location").innerHTML = "Wallet -> " + Names[temp-1]; Known.wallet1 = true; if (!hinted) {Game.wallet1 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	else if (document.getElementById(key).value == "wal" && !Game.wallet2) {Check[document.getElementById(key).id] = "wallet";Location.wallet2 = document.getElementById(key).id; document.getElementById("wallet2_location").innerHTML = "Wallet -> " + Names[temp-1]; Known.wallet2 = true; if (!hinted) {Game.wallet2 = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "gor" && !Game.goron_tunic) {Check[document.getElementById(key).id] = "goron_tunic";Location.goron_tunic = document.getElementById(key).id; document.getElementById("goron_tunic_location").innerHTML = "Goron Tunic -> " + Names[temp-1]; Known.goron_tunic = true; if (!hinted) {Game.goron_tunic = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	if (document.getElementById(key).value == "zor" && !Game.zora_tunic) {Check[document.getElementById(key).id] = "zora_tunic";Location.zora_tunic = document.getElementById(key).id; document.getElementById("zora_tunic_location").innerHTML = "Zora Tunic -> " + Names[temp-1]; Known.zora_tunic = true; if (!hinted) {Game.zora_tunic = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	if (document.getElementById(key).value == "din" && !Game.dins_fire) {Check[document.getElementById(key).id] = "dins_fire";Location.dins_fire = document.getElementById(key).id; document.getElementById("dins_fire_location").innerHTML = "Dins Fire -> " + Names[temp-1]; Known.dins_fire = true; if (!hinted) {Game.dins_fire = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
@@ -990,9 +990,9 @@ for (i = 1; i <= 4; i++) {
 	if (document.getElementById(key).value == "sto" && !Game.stone_of_agony) {Location.stone_of_agony = document.getElementById(key).id; Known.stone_of_agony = true; if (!hinted) {Game.stone_of_agony = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	if ((document.getElementById(key).value == "pre" || document.getElementById(key).value == "eye" || document.getElementById(key).value == "dro") && (!Game.prescription || !Game.claim_check)) {Check[document.getElementById(key).id] = "prescription";Location.prescription = document.getElementById(key).id; document.getElementById("trade_location").innerHTML = "Prescription -> " + Names[temp-1]; Known.prescription = true; if (!hinted) {Game.prescription = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
 	if (document.getElementById(key).value == "cla" && (!Game.prescription || !Game.claim_check)) {Check[document.getElementById(key).id] = "claim_check";Location.claim_check = document.getElementById(key).id; document.getElementById("trade_location").innerHTML = "Claim -> " + Names[temp-1]; Known.claim_check = true; if (!hinted) {Game.claim_check = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	if (document.getElementById(key).value == "lig" && !Game.light_arrows) {Check[document.getElementById(key).id] = "light_arrows"; Location.light_arrows = document.getElementById(key).id; document.getElementById("light_arrows_location").innerHTML = "Light Arrows -> " + Names[temp-1]; Known.light_arrows = true; if (!hinted) {Game.light_arrows = true;} if (temp <= 38) {junkB1(document.getElementById(key))} else if (temp<=76) {junkB2(document.getElementById(key))} else if (temp <= 114){junkB3(document.getElementById(key))} else if (temp <= 154) {junkB5(document.getElementById(key))} else if (temp <= 208){ junkB6(document.getElementById(key))} else{junkB7(document.getElementById(key))}continue;}
-	
+
 	}
 	else {
 	if (document.getElementById(key).value == "lul" && !Game.lullaby) {Check[document.getElementById(key).id] = "lullaby";Location.lullaby = document.getElementById(key).id; Known.lullaby = true; if (!hinted) {Game.lullaby = true;} var change = "text_" + document.getElementById(key).id; document.getElementById(change).innerHTML += ": Lullaby"; junkBS(document.getElementById(key)); continue;}
@@ -1018,75 +1018,75 @@ for (var i = 1; i <= 5; i++) {
 	var str = document.getElementById("woth_input" + i).value;
 	str = str.replace("2","");
 	if (str == "kok" || str == "kf" || str == "koki" || str == "kfc") {Area[1] = "woth";}
-	if (str == "llr" || str == "ranch" || str == "lon" || str == "ran") {Area[2] = "woth";} 
-	if (str == "fie" || str == "hf" || str == "field") {Area[3] = "woth";} 
-	if (str == "gv" || str == "val" || str == "valley") {Area[4] = "woth";} 
-	if (str == "hyl" || str == "hylia" || str == "lh") {Area[5] = "woth";} 
-	if (str == "mkt" || str == "market" || str == "mar") {Area[6] = "woth";} 
-	if (str == "hyr c" || str == "hcast" || str == "hc") {Area[7] = "woth";} 
-	if (str == "ogc" || str == "out g" || str == "gfairy" || str == "og" || str == "out") {Area[8] = "woth";} 
-	if (str == "tot" || str == "temple" || str == "time") {Area[9] = "woth";} 
-	if (str == "fountain" || str == "fount" || str == "fou" || str == "zf") {Area[10] = "woth";} 
-	if (str == "ice" || str == "ic" || str == "cavern") {Area[11] = "woth";} 
-	if (str == "deku" || str == "dek" || str == "dt") {Area[12] = "woth";} 
-	if (str == "lw" || str == "lost" || str == "woods") {Area[13] = "woth";} 
-	if (str == "sfm" || str == "mea" || str == "mead") {Area[14] = "woth";} 
-	if (str == "gor" || str == "gc" || str == "goron") {Area[15] = "woth";} 
-	if (str == "dod" || str == "dodo" || str == "dc") {Area[16] = "woth";} 
-	if (str == "tra" || str == "trail" || str == "dmt") {Area[17] = "woth";} 
-	if (str == "cra" || str == "crater" || str == "dmc") {Area[18] = "woth";} 
-	if (str == "kak" || str == "kaki" || str == "kv") {Area[19] = "woth";} 
-	if (str == "gra" || str == "grave" || str == "gy") {Area[20] = "woth";} 
-	if (str == "riv" || str == "river" || str == "zr") {Area[21] = "woth";} 
-	if (str == "dom" || str == "domain" || str == "zd") {Area[22] = "woth";} 
-	if (str == "col" || str == "colo" || str == "colossus" || str == "co") {Area[23] = "woth";} 
-	if (str == "was" || str == "waste" || str == "wl" || str == "hw") {Area[24] = "woth";} 
-	if (str == "fort" || str == "fortress" || str == "gf") {Area[25] = "woth";} 
-	if (str == "jab" || str == "jabu" || str == "jjb" || str == "jj") {Area[26] = "woth";} 
-	if (str == "for" || str == "forest" || str == "fot" || str == "fo") {Area[27] = "woth";} 
-	if (str == "fir" || str == "fire" || str == "fit" || str == "fi") {Area[28] = "woth";} 
-	if (str == "wat" || str == "wata" || str == "water" || str == "wa") {Area[29] = "woth";} 
-	if (str == "spi" || str == "spirit" || str == "sprt" || str == "sp") {Area[30] = "woth";} 
-	if (str == "sha" || str == "shadow" || str == "shad" || str == "sh") {Area[31] = "woth";} 
-	if (str == "gan" || str == "gan c" || str == "ganons" || str == "ganon" || str == "ga") {Area[32] = "woth";} 
-	if (str == "gtg" || str == "tg" || str == "gt") {Area[33] = "woth";} 
+	if (str == "llr" || str == "ranch" || str == "lon" || str == "ran") {Area[2] = "woth";}
+	if (str == "fie" || str == "hf" || str == "field") {Area[3] = "woth";}
+	if (str == "gv" || str == "val" || str == "valley") {Area[4] = "woth";}
+	if (str == "hyl" || str == "hylia" || str == "lh") {Area[5] = "woth";}
+	if (str == "mkt" || str == "market" || str == "mar") {Area[6] = "woth";}
+	if (str == "hyr c" || str == "hcast" || str == "hc") {Area[7] = "woth";}
+	if (str == "ogc" || str == "out g" || str == "gfairy" || str == "og" || str == "out") {Area[8] = "woth";}
+	if (str == "tot" || str == "temple" || str == "time") {Area[9] = "woth";}
+	if (str == "fountain" || str == "fount" || str == "fou" || str == "zf") {Area[10] = "woth";}
+	if (str == "ice" || str == "ic" || str == "cavern") {Area[11] = "woth";}
+	if (str == "deku" || str == "dek" || str == "dt") {Area[12] = "woth";}
+	if (str == "lw" || str == "lost" || str == "woods") {Area[13] = "woth";}
+	if (str == "sfm" || str == "mea" || str == "mead") {Area[14] = "woth";}
+	if (str == "gor" || str == "gc" || str == "goron") {Area[15] = "woth";}
+	if (str == "dod" || str == "dodo" || str == "dc") {Area[16] = "woth";}
+	if (str == "tra" || str == "trail" || str == "dmt") {Area[17] = "woth";}
+	if (str == "cra" || str == "crater" || str == "dmc") {Area[18] = "woth";}
+	if (str == "kak" || str == "kaki" || str == "kv") {Area[19] = "woth";}
+	if (str == "gra" || str == "grave" || str == "gy") {Area[20] = "woth";}
+	if (str == "riv" || str == "river" || str == "zr") {Area[21] = "woth";}
+	if (str == "dom" || str == "domain" || str == "zd") {Area[22] = "woth";}
+	if (str == "col" || str == "colo" || str == "colossus" || str == "co") {Area[23] = "woth";}
+	if (str == "was" || str == "waste" || str == "wl" || str == "hw") {Area[24] = "woth";}
+	if (str == "fort" || str == "fortress" || str == "gf") {Area[25] = "woth";}
+	if (str == "jab" || str == "jabu" || str == "jjb" || str == "jj") {Area[26] = "woth";}
+	if (str == "for" || str == "forest" || str == "fot" || str == "fo") {Area[27] = "woth";}
+	if (str == "fir" || str == "fire" || str == "fit" || str == "fi") {Area[28] = "woth";}
+	if (str == "wat" || str == "wata" || str == "water" || str == "wa") {Area[29] = "woth";}
+	if (str == "spi" || str == "spirit" || str == "sprt" || str == "sp") {Area[30] = "woth";}
+	if (str == "sha" || str == "shadow" || str == "shad" || str == "sh") {Area[31] = "woth";}
+	if (str == "gan" || str == "gan c" || str == "ganons" || str == "ganon" || str == "ga") {Area[32] = "woth";}
+	if (str == "gtg" || str == "tg" || str == "gt") {Area[33] = "woth";}
 	if (str == "well" || str == "botw" || str == "wel") {Area[34] = "woth";}
 	if (i <= 3) {
 		var str2 = document.getElementById("barren_input" + i).value;
 		if (str2 == "kok" || str2 == "kf" || str2 == "koki" || str2 == "kfc") {Area[1] = "barren";}
-		if (str2 == "llr" || str2 == "ranch" || str2 == "lon" || str2 == "ran") {Area[2] = "barren";} 
-		if (str2 == "fie" || str2 == "hf" || str2 == "field") {Area[3] = "barren";} 
-		if (str2 == "gv" || str2 == "val" || str2 == "valley") {Area[4] = "barren";} 
-		if (str2 == "hyl" || str2 == "hylia" || str2 == "lh") {Area[5] = "barren";} 
-		if (str2 == "mkt" || str2 == "market" || str2 == "mar") {Area[6] = "barren";} 
-		if (str2 == "hyr c" || str2 == "hcast" || str2 == "hc") {Area[7] = "barren";} 
-		if (str2 == "ogc" || str2 == "out g" || str2 == "gfairy" || str2 == "og" || str2 == "out") {Area[8] = "barren";} 
-		if (str2 == "tot" || str2 == "temple" || str2 == "time") {Area[9] = "barren";} 
-		if (str2 == "fountain" || str2 == "fount" || str2 == "fou" || str2 == "zf") {Area[10] = "barren";} 
-		if (str2 == "ice" || str2 == "ic" || str2 == "cavern") {Area[11] = "barren";} 
-		if (str2 == "deku" || str2 == "dek" || str2 == "dt") {Area[12] = "barren";} 
-		if (str2 == "lw" || str2 == "lost" || str2 == "woods") {Area[13] = "barren";} 
-		if (str2 == "sfm" || str2 == "mea" || str2 == "mead") {Area[14] = "barren";} 
-		if (str2 == "gor" || str2 == "gc" || str2 == "goron") {Area[15] = "barren";} 
-		if (str2 == "dod" || str2 == "dodo" || str2 == "dc") {Area[16] = "barren";} 
-		if (str2 == "tra" || str2 == "trail" || str2 == "dmt") {Area[17] = "barren";} 
-		if (str2 == "cra" || str2 == "crater" || str2 == "dmc") {Area[18] = "barren";} 
-		if (str2 == "kak" || str2 == "kaki" || str2 == "kv") {Area[19] = "barren";} 
-		if (str2 == "gra" || str2 == "grave" || str2 == "gy") {Area[20] = "barren";} 
-		if (str2 == "riv" || str2 == "river" || str2 == "zr") {Area[21] = "barren";} 
-		if (str2 == "dom" || str2 == "domain" || str2 == "zd") {Area[22] = "barren";} 
-		if (str2 == "col" || str2 == "colo" || str2 == "colossus" || str2 == "co") {Area[23] = "barren";} 
-		if (str2 == "was" || str2 == "waste" || str2 == "wl" || str2 == "hw") {Area[24] = "barren";} 
-		if (str2 == "fort" || str2 == "fortress" || str2 == "gf") {Area[25] = "barren";} 
-		if (str2 == "jab" || str2 == "jabu" || str2 == "jjb" || str2 == "jj") {Area[26] = "barren";} 
-		if (str2 == "for" || str2 == "forest" || str2 == "fot" || str2 == "fo") {Area[27] = "barren";} 
-		if (str2 == "fir" || str2 == "fire" || str2 == "fit" || str2 == "fi") {Area[28] = "barren";} 
-		if (str2 == "wat" || str2 == "wata" || str2 == "water" || str2 == "wa") {Area[29] = "barren";} 
-		if (str2 == "spi" || str2 == "spirit" || str2 == "sprt" || str2 == "sp") {Area[30] = "barren";} 
-		if (str2 == "sha" || str2 == "shadow" || str2 == "shad" || str2 == "sh") {Area[31] = "barren";} 
-		if (str2 == "gan" || str2 == "gan c" || str2 == "ganons" || str2 == "ganon" || str2 == "ga") {Area[32] = "barren";} 
-		if (str2 == "gtg" || str2 == "tg" || str2 == "gt") {Area[33] = "barren";} 
-		if (str2 == "well" || str2 == "botw" || str2 == "wel") {Area[34] = "barren";} 
+		if (str2 == "llr" || str2 == "ranch" || str2 == "lon" || str2 == "ran") {Area[2] = "barren";}
+		if (str2 == "fie" || str2 == "hf" || str2 == "field") {Area[3] = "barren";}
+		if (str2 == "gv" || str2 == "val" || str2 == "valley") {Area[4] = "barren";}
+		if (str2 == "hyl" || str2 == "hylia" || str2 == "lh") {Area[5] = "barren";}
+		if (str2 == "mkt" || str2 == "market" || str2 == "mar") {Area[6] = "barren";}
+		if (str2 == "hyr c" || str2 == "hcast" || str2 == "hc") {Area[7] = "barren";}
+		if (str2 == "ogc" || str2 == "out g" || str2 == "gfairy" || str2 == "og" || str2 == "out") {Area[8] = "barren";}
+		if (str2 == "tot" || str2 == "temple" || str2 == "time") {Area[9] = "barren";}
+		if (str2 == "fountain" || str2 == "fount" || str2 == "fou" || str2 == "zf") {Area[10] = "barren";}
+		if (str2 == "ice" || str2 == "ic" || str2 == "cavern") {Area[11] = "barren";}
+		if (str2 == "deku" || str2 == "dek" || str2 == "dt") {Area[12] = "barren";}
+		if (str2 == "lw" || str2 == "lost" || str2 == "woods") {Area[13] = "barren";}
+		if (str2 == "sfm" || str2 == "mea" || str2 == "mead") {Area[14] = "barren";}
+		if (str2 == "gor" || str2 == "gc" || str2 == "goron") {Area[15] = "barren";}
+		if (str2 == "dod" || str2 == "dodo" || str2 == "dc") {Area[16] = "barren";}
+		if (str2 == "tra" || str2 == "trail" || str2 == "dmt") {Area[17] = "barren";}
+		if (str2 == "cra" || str2 == "crater" || str2 == "dmc") {Area[18] = "barren";}
+		if (str2 == "kak" || str2 == "kaki" || str2 == "kv") {Area[19] = "barren";}
+		if (str2 == "gra" || str2 == "grave" || str2 == "gy") {Area[20] = "barren";}
+		if (str2 == "riv" || str2 == "river" || str2 == "zr") {Area[21] = "barren";}
+		if (str2 == "dom" || str2 == "domain" || str2 == "zd") {Area[22] = "barren";}
+		if (str2 == "col" || str2 == "colo" || str2 == "colossus" || str2 == "co") {Area[23] = "barren";}
+		if (str2 == "was" || str2 == "waste" || str2 == "wl" || str2 == "hw") {Area[24] = "barren";}
+		if (str2 == "fort" || str2 == "fortress" || str2 == "gf") {Area[25] = "barren";}
+		if (str2 == "jab" || str2 == "jabu" || str2 == "jjb" || str2 == "jj") {Area[26] = "barren";}
+		if (str2 == "for" || str2 == "forest" || str2 == "fot" || str2 == "fo") {Area[27] = "barren";}
+		if (str2 == "fir" || str2 == "fire" || str2 == "fit" || str2 == "fi") {Area[28] = "barren";}
+		if (str2 == "wat" || str2 == "wata" || str2 == "water" || str2 == "wa") {Area[29] = "barren";}
+		if (str2 == "spi" || str2 == "spirit" || str2 == "sprt" || str2 == "sp") {Area[30] = "barren";}
+		if (str2 == "sha" || str2 == "shadow" || str2 == "shad" || str2 == "sh") {Area[31] = "barren";}
+		if (str2 == "gan" || str2 == "gan c" || str2 == "ganons" || str2 == "ganon" || str2 == "ga") {Area[32] = "barren";}
+		if (str2 == "gtg" || str2 == "tg" || str2 == "gt") {Area[33] = "barren";}
+		if (str2 == "well" || str2 == "botw" || str2 == "wel") {Area[34] = "barren";}
 	}
 }
 
@@ -1105,12 +1105,12 @@ for(var i = 0; i < checkSummary.length; i++) {
 		else {
 			str = checkSummary[i];
 		}
-		if (Game[checkSummary[i]] || i > 36) { 
+		if (Game[checkSummary[i]] || i > 36) {
 			if (document.getElementById(str).innerHTML.includes("Kokiri:") && Area[1] == "woth") {
-				document.getElementById(str).style.color = "00ff88"; 
+				document.getElementById(str).style.color = "00ff88";
 			}
 			else if ((document.getElementById(str).innerHTML.includes("Ranch:") || document.getElementById(str).innerHTML.includes("Malon"))  && Area[2] == "woth") {
-				document.getElementById(str).style.color = "aaaa00"; 
+				document.getElementById(str).style.color = "aaaa00";
 			}
 			else if ((document.getElementById(str).innerHTML.includes("Field:") || document.getElementById(str).innerHTML.includes("OoT")) && Area[3] == "woth") {
 				document.getElementById(str).style.color = "ffff00";
@@ -1131,7 +1131,7 @@ for(var i = 0; i < checkSummary.length; i++) {
 				document.getElementById(str).style.color = "FE0404";
 			}
 			else if ((document.getElementById(str).innerHTML.includes("Temple of Time:") || document.getElementById(str).innerHTML.includes("1Med")) && Area[9] == "woth") {
-				document.getElementById(str).style.color = "ffffff"; 
+				document.getElementById(str).style.color = "ffffff";
 			}
 			else if (document.getElementById(str).innerHTML.includes("Fountain:") && Area[10] == "woth") {
 				document.getElementById(str).style.color = "70ffff";
@@ -1321,10 +1321,10 @@ for(var i = 0; i < checkSummary.length; i++) {
 		}
 }
 for (var i = 1; i <= 34; i++) {
-	
+
 	if (Area[i] == "barren") {AreaAge[i] += 1;}
 	else {AreaAge[i] = 0;}
-	
+
 	if (AreaAge[i] == 10) {
 		hinted = true;
 		if (i == 1) {
@@ -1534,7 +1534,7 @@ for (var i = 1; i <= 34; i++) {
 if (Game.magic1 && Game.light_arrows && Game.bow1 && Game.ganons_checks_remaining > 0) {
 	document.getElementById("ganons").click();
 }
-	
+
 if (document.getElementById("markStones") != null) {
 	var tempstring = document.getElementById("markStones").value;
 if(tempstring.length == 6) 	{
@@ -1544,8 +1544,8 @@ if(tempstring.length == 6) 	{
 	var third = str.substring(4,6);
 	var parent = document.getElementById("info_column");
 	var child = document.getElementById("markStones");
-	
-	
+
+
 	if (first == "de") {Logic.emerald = "deku"; }
 	else if (first == "do") {Logic.emerald = "dodongos"; }
 	else if (first == "ja") {Logic.emerald = "jabu"; }
@@ -1555,7 +1555,7 @@ if(tempstring.length == 6) 	{
 	else if (first == "sp") {Logic.emerald = "spirit"; }
 	else if (first == "sh") {Logic.emerald = "shadow"; }
 	else if (first == "fr" || first == "kk") {Logic.emerald = "pocket"; }
-	
+
 	if (second == "de") {Logic.ruby = "deku"; }
 	else if (second == "do") {Logic.ruby = "dodongos"; }
 	else if (second == "ja") {Logic.ruby = "jabu"; }
@@ -1565,7 +1565,7 @@ if(tempstring.length == 6) 	{
 	else if (second == "sp") {Logic.ruby = "spirit"; }
 	else if (second == "sh") {Logic.ruby = "shadow"; }
 	else if (second == "fr" || second == "kk") {Logic.ruby = "pocket"; }
-	
+
 	if (third == "de") {Logic.sapphire = "deku"; }
 	else if (third == "do") {Logic.sapphire = "dodongos"; }
 	else if (third == "ja") {Logic.sapphire = "jabu"; }
@@ -1586,7 +1586,7 @@ if(tempstring.length == 6) 	{
 	else if (first == "sp") {Logic.emerald = "spirit"; document.getElementById("text_kok_eme").className="greenstone"; document.getElementById("text_kok_eme").innerHTML = "spi"; document.getElementById("kok_eme_req1").className = "requirements"; document.getElementById("kok_eme_req2").className = "requirements"; document.getElementById("kok_eme_req3").className = "requirements"; document.getElementById("kok_eme_req4").className = "requirements"; document.getElementById("kok_eme_req1").src=Game.silver_gauntlets_img; document.getElementById("kok_eme_req2").src=Game.mirror_shield_img; document.getElementById("kok_eme_req3").src=Game.bomb_bag_img; document.getElementById("kok_eme_req4").src=Game.hookshot_img; document.getElementById("kok_eme_req1").id = "spi_req1"; document.getElementById("kok_eme_req2").id = "spi_req2"; document.getElementById("kok_eme_req3").id = "spi_req3"; document.getElementById("kok_eme_req4").id = "spi_req4"; document.getElementById("text_kok_eme").id = "text_spirit";}
 	else if (first == "sh") {Logic.emerald = "shadow"; document.getElementById("text_kok_eme").className="greenstone"; document.getElementById("text_kok_eme").innerHTML = "sha"; document.getElementById("kok_eme_req1").className = "requirements"; document.getElementById("kok_eme_req2").className = "requirements"; document.getElementById("kok_eme_req3").className = "requirements"; document.getElementById("kok_eme_req4").className = "requirements"; document.getElementById("kok_eme_req5").className = "requirements"; document.getElementById("kok_eme_req1").src=Game.dins_fire_img; document.getElementById("kok_eme_req2").src =Game.magic_meter_img; document.getElementById("kok_eme_req3").src=Game.hover_boots_img; document.getElementById("kok_eme_req4").src=Game.bomb_bag_img; document.getElementById("kok_eme_req5").src=Game.hookshot_img; document.getElementById("kok_eme_req1").id = "sha_req1"; document.getElementById("kok_eme_req2").id = "sha_req2"; document.getElementById("kok_eme_req3").id = "sha_req3"; document.getElementById("kok_eme_req4").id = "sha_req4"; document.getElementById("kok_eme_req5").id = "sha_req5"; document.getElementById("text_kok_eme").id = "text_shadow";}
 	else if (first == "fr" || first == "kk") {Logic.emerald = "pocket"; document.getElementById("text_kok_eme").className="greenstone"; document.getElementById("text_kok_eme").innerHTML = "pok"; document.getElementById("text_kok_eme").id = "text_pocket";}
-	
+
 	if (second == "de") {Logic.ruby = "deku"; document.getElementById("text_gor_rub").className="redstone"; document.getElementById("text_gor_rub").innerHTML = "dek"; document.getElementById("text_gor_rub").id = "text_deku";}
 	else if (second == "do") {Logic.ruby = "dodongos"; document.getElementById("text_gor_rub").className="redstone"; document.getElementById("text_gor_rub").innerHTML = "dod"; document.getElementById("gor_rub_req1").className = "requirements"; document.getElementById("gor_rub_req1").src=Game.bomb_bag_img; document.getElementById("gor_rub_req1").id = "dod_req1"; document.getElementById("text_gor_rub").id = "text_dod";}
 	else if (second == "ja") {Logic.ruby = "jabu"; document.getElementById("text_gor_rub").className="redstone"; document.getElementById("text_gor_rub").innerHTML = "jab"; document.getElementById("gor_rub_req1").className = "requirements"; document.getElementById("gor_rub_req2").className = "requirements"; document.getElementById("gor_rub_req1").src=Game.letter_img; document.getElementById("gor_rub_req2").src=Game.boomerang_img; document.getElementById("gor_rub_req1").id = "jab_req1"; document.getElementById("gor_rub_req2").id = "jab_req2"; document.getElementById("text_gor_rub").id = "text_jabu";}
@@ -1596,7 +1596,7 @@ if(tempstring.length == 6) 	{
 	else if (second == "sp") {Logic.ruby = "spirit"; document.getElementById("text_gor_rub").className="redstone"; document.getElementById("text_gor_rub").innerHTML = "spi"; document.getElementById("gor_rub_req1").className = "requirements"; document.getElementById("gor_rub_req2").className = "requirements"; document.getElementById("gor_rub_req3").className = "requirements"; document.getElementById("gor_rub_req4").className = "requirements"; document.getElementById("gor_rub_req1").src=Game.silver_gauntlets_img; document.getElementById("gor_rub_req2").src=Game.mirror_shield_img; document.getElementById("gor_rub_req3").src=Game.bomb_bag_img; document.getElementById("gor_rub_req4").src=Game.hookshot_img; document.getElementById("gor_rub_req1").id = "spi_req1"; document.getElementById("gor_rub_req2").id = "spi_req2"; document.getElementById("gor_rub_req3").id = "spi_req3"; document.getElementById("gor_rub_req4").id = "spi_req4"; document.getElementById("text_gor_rub").id = "text_spirit";}
 	else if (second == "sh") {Logic.ruby = "shadow"; document.getElementById("text_gor_rub").className="redstone"; document.getElementById("text_gor_rub").innerHTML = "sha"; document.getElementById("gor_rub_req1").className = "requirements"; document.getElementById("gor_rub_req2").className = "requirements"; document.getElementById("gor_rub_req3").className = "requirements"; document.getElementById("gor_rub_req4").className = "requirements"; document.getElementById("gor_rub_req5").className = "requirements"; document.getElementById("gor_rub_req1").src=Game.dins_fire_img; document.getElementById("gor_rub_req2").src =Game.magic_meter_img; document.getElementById("gor_rub_req3").src=Game.hover_boots_img; document.getElementById("gor_rub_req4").src=Game.bomb_bag_img; document.getElementById("gor_rub_req5").src=Game.hookshot_img; document.getElementById("gor_rub_req1").id = "sha_req1"; document.getElementById("gor_rub_req2").id = "sha_req2"; document.getElementById("gor_rub_req3").id = "sha_req3"; document.getElementById("gor_rub_req4").id = "sha_req4"; document.getElementById("gor_rub_req5").id = "sha_req5"; document.getElementById("text_gor_rub").id = "text_shadow";}
 	else if (second == "fr" || second == "kk") {Logic.ruby = "pocket"; document.getElementById("text_gor_rub").className="redstone"; document.getElementById("text_gor_rub").innerHTML = "pok"; document.getElementById("text_gor_rub").id = "text_pocket";}
-	
+
 	if (third == "de") {Logic.sapphire = "deku"; document.getElementById("text_zor_sap").className="bluestone"; document.getElementById("text_zor_sap").innerHTML = "dek"; document.getElementById("text_zor_sap").id = "text_deku";}
 	else if (third == "do") {Logic.sapphire = "dodongos"; document.getElementById("text_zor_sap").className="bluestone"; document.getElementById("text_zor_sap").innerHTML = "dod"; document.getElementById("zor_sap_req1").className = "requirements"; document.getElementById("zor_sap_req1").src=Game.bomb_bag_img; document.getElementById("zor_sap_req1").id = "dod_req1"; document.getElementById("text_zor_sap").id = "text_dod";}
 	else if (third == "ja") {Logic.sapphire = "jabu"; document.getElementById("text_zor_sap").className="bluestone"; document.getElementById("text_zor_sap").innerHTML = "jab"; document.getElementById("zor_sap_req1").className = "requirements"; document.getElementById("zor_sap_req2").className = "requirements"; document.getElementById("zor_sap_req1").src=Game.letter_img; document.getElementById("zor_sap_req2").src=Game.boomerang_img; document.getElementById("zor_sap_req1").id = "jab_req1"; document.getElementById("zor_sap_req2").id = "jab_req2"; document.getElementById("text_zor_sap").id = "text_jabu";}
@@ -1621,8 +1621,8 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	var sixth = str.substring(10,12);
 	var parent = document.getElementById("info_column");
 	var child = document.getElementById("markMedallions");
-	
-	
+
+
 	if (first == "de") {Logic.forest_medallion_location = "deku"; dekuRequired = 1;}
 	else if (first == "do") {Logic.forest_medallion_location = "dodongos"; dodongosRequired = 1;}
 	else if (first == "ja") {Logic.forest_medallion_location = "jabu"; jabuRequired = 1;}
@@ -1632,7 +1632,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	else if (first == "sp") {Logic.forest_medallion_location = "spirit"; spiritRequired = 1;}
 	else if (first == "sh") {Logic.forest_medallion_location = "shadow"; shadowRequired = 1;}
 	else if (first == "fr" || first == "kk") {Logic.forest_medallion_location = "pocket"; }
-	
+
 	if (second == "de") {Logic.fire_medallion_location = "deku"; dekuRequired = 1;}
 	else if (second == "do") {Logic.fire_medallion_location = "dodongos"; dodongosRequired = 1;}
 	else if (second == "ja") {Logic.fire_medallion_location = "jabu"; jabuRequired = 1;}
@@ -1642,7 +1642,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	else if (second == "sp") {Logic.fire_medallion_location = "spirit"; spiritRequired = 1;}
 	else if (second == "sh") {Logic.fire_medallion_location = "shadow"; shadowRequired = 1;}
 	else if (second == "fr" || second == "kk") {Logic.fire_medallion_location = "pocket"; }
-	
+
 	if (third == "de") {Logic.water_medallion_location = "deku"; dekuRequired = 1;}
 	else if (third == "do") {Logic.water_medallion_location = "dodongos"; dodongosRequired = 1;}
 	else if (third == "ja") {Logic.water_medallion_location = "jabu"; jabuRequired = 1;}
@@ -1652,7 +1652,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	else if (third == "sp") {Logic.water_medallion_location = "spirit"; spiritRequired = 1;}
 	else if (third == "sh") {Logic.water_medallion_location = "shadow"; shadowRequired = 1;}
 	else if (third == "fr" || third == "kk") {Logic.water_medallion_location = "pocket"; }
-	
+
 	if (fourth == "de") {Logic.generic1 = "deku"; dekuRequired = 1;}
 	else if (fourth == "do") {Logic.generic1 = "dodongos"; dodongosRequired = 1;}
 	else if (fourth == "ja") {Logic.generic1 = "jabu"; jabuRequired = 1;}
@@ -1662,7 +1662,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	else if (fourth == "sp") {Logic.generic1 = "spirit"; spiritRequired = 1;}
 	else if (fourth == "sh") {Logic.generic1 = "shadow"; shadowRequired = 1;}
 	else if (fourth == "fr" || fourth == "kk") {Logic.generic1 = "pocket"; }
-	
+
 	if (fifth == "de") {Logic.generic2 = "deku"; dekuRequired = 1;}
 	else if (fifth == "do") {Logic.generic2 = "dodongos"; dodongosRequired = 1;}
 	else if (fifth == "ja") {Logic.generic2 = "jabu"; jabuRequired = 1;}
@@ -1672,7 +1672,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	else if (fifth == "sp") {Logic.generic2 = "spirit"; spiritRequired = 1;}
 	else if (fifth == "sh") {Logic.generic2 = "shadow"; shadowRequired = 1;}
 	else if (fifth == "fr" || fifth == "kk") {Logic.generic2 = "pocket"; }
-	
+
 	if (sixth == "de") {Logic.generic3 = "deku"; dekuRequired = 1;}
 	else if (sixth == "do") {Logic.generic3 = "dodongos"; dodongosRequired = 1;}
 	else if (sixth == "ja") {Logic.generic3 = "jabu"; jabuRequired = 1;}
@@ -1798,11 +1798,11 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 			if (first != "sp" && second != "sp" && third != "sp" && fourth != "sp" && fifth != "sp" && sixth != "sp") {document.getElementById("markStones").value += "sp"}
 			if (first != "fr" && first != "kk" && second != "fr" && second != "kk" && third != "fr" && third != "kk" && fourth != "fr" && fourth != "kk" && fifth != "fr" && fifth != "kk" && sixth != "fr" && sixth != "kk" ) {document.getElementById("markStones").value += "fr"}
 		}
-		
+
 	}
 }
-	
-	
+
+
 	Location_Logic.mido_1 = true;
 	Location_Logic.mido_2 = true;
 	Location_Logic.mido_3 = true;
@@ -2003,8 +2003,8 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	Location_Logic.ganons6 = Logic.can_enter_ganons && Logic.golden_gauntlets;
 	Location_Logic.ganons7 = Logic.can_enter_ganons && Logic.golden_gauntlets ;//&& Logic.can_see;
 	Location_Logic.ganons8 = Logic.can_enter_ganons && Logic.golden_gauntlets && Logic.lullaby && Logic.ganons_keys >= 1;
-	Location_Logic.ganons9 = Logic.can_enter_ganons;
-	Location_Logic.ganons10 = Logic.can_enter_ganons && Logic.bomb_bag;//&& Logic.can_see;
+	Location_Logic.ganons9 = Logic.can_enter_ganons && Logic.hookshot;
+	Location_Logic.ganons10 = Logic.can_enter_ganons && Logic.hookshot && Logic.bomb_bag;//&& Logic.can_see;
 	Location_Logic.ganons11 = Logic.can_enter_ganons;
 	Location_Logic.ganons12 = Logic.can_enter_ganons;
 	Location_Logic.ganons13 = Logic.can_enter_ganons;
@@ -2361,8 +2361,8 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	Location_Access.ganons6 = Game.can_enter_ganons && Game.strength3;
 	Location_Access.ganons7 = Game.can_enter_ganons && Game.strength3 ;//&& Game.can_see;
 	Location_Access.ganons8 = Game.can_enter_ganons && Game.strength3 && Game.lullaby && Game.current_ganons_keys >= 1;
-	Location_Access.ganons9 = Game.can_enter_ganons;
-	Location_Access.ganons10 = Game.can_enter_ganons && (Game.bomb_bag1 || Game.has_chus);//&& Game.can_see;
+	Location_Access.ganons9 = Game.can_enter_ganons && Game.hookshot1;
+	Location_Access.ganons10 = Game.can_enter_ganons && Game.hookshot1 && (Game.bomb_bag1 || Game.has_chus);//&& Game.can_see;
 	Location_Access.ganons11 = Game.can_enter_ganons;
 	Location_Access.ganons12 = Game.can_enter_ganons;
 	Location_Access.ganons13 = Game.can_enter_ganons;
@@ -2569,7 +2569,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 			document.getElementById(str).className= "ool_check_text";
 		}
 	}
-	
+
 	document.getElementById("forest").innerHTML = "" + Game.forest_checks_remaining;
 	document.getElementById("fire").innerHTML = "" + Game.fire_checks_remaining;
 	document.getElementById("water").innerHTML = "" + Game.water_checks_remaining;
@@ -2578,7 +2578,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	document.getElementById("ganons").innerHTML = "" + Game.ganons_checks_remaining;
 	document.getElementById("gtg").innerHTML = "" + Game.gtg_checks_remaining;
 	document.getElementById("well").innerHTML = "" + Game.well_checks_remaining;
-	
+
 	document.getElementById("forestSKs").innerHTML = "" + (5 - Game.current_forest_keys);
 	document.getElementById("fireSKs").innerHTML = "" + (8 - Game.current_fire_keys);
 	document.getElementById("waterSKs").innerHTML = "" + (6 - Game.current_water_keys);
@@ -2587,14 +2587,14 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	document.getElementById("ganonsSKs").innerHTML = "" + (2 - Game.current_ganons_keys);
 	document.getElementById("gtgSKs").innerHTML = "" + (9 - Game.current_gtg_keys);
 	document.getElementById("wellSKs").innerHTML = "" + (3 - Game.current_well_keys);
-	
+
 	if (Game.forest_boss_key) {document.getElementById("forestBKs").innerHTML = 0;} else {document.getElementById("forestBKs").innerHTML = 1;}
 	if (Game.fire_boss_key) {document.getElementById("fireBKs").innerHTML = 0;} else {document.getElementById("fireBKs").innerHTML = 1;}
 	if (Game.water_boss_key) {document.getElementById("waterBKs").innerHTML = 0;} else {document.getElementById("waterBKs").innerHTML = 1;}
 	if (Game.spirit_boss_key) {document.getElementById("spiritBKs").innerHTML = 0;} else {document.getElementById("spiritBKs").innerHTML = 1;}
 	if (Game.shadow_boss_key) {document.getElementById("shadowBKs").innerHTML = 0;} else {document.getElementById("shadowBKs").innerHTML = 1;}
 	if (Game.ganons_boss_key) {document.getElementById("ganonsBKs").innerHTML = 0;} else {document.getElementById("ganonsBKs").innerHTML = 1;}
-	
+
 	/*if(Location_Logic.deku_queen_gohma == true) {document.getElementById("dekuLogic").style.backgroundColor = "chartreuse";} else {document.getElementById("dekuLogic").style.backgroundColor = "palevioletred";}
 	if(Location_Logic.dodongos_king_dodongo == true) {document.getElementById("dodongosLogic").style.backgroundColor = "chartreuse";} else {document.getElementById("dodongosLogic").style.backgroundColor = "palevioletred";}
 	if(Location_Logic.jabu_barinade == true) {document.getElementById("jabuLogic").style.backgroundColor = "chartreuse";} else {document.getElementById("jabuLogic").style.backgroundColor = "palevioletred";}
@@ -2603,10 +2603,10 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if(Location_Logic.water11 == true) {document.getElementById("waterLogic").style.backgroundColor = "chartreuse";} else {document.getElementById("waterLogic").style.backgroundColor = "palevioletred";}
 	if(Location_Logic.spirit20 == true) {document.getElementById("spiritLogic").style.backgroundColor = "chartreuse";} else {document.getElementById("spiritLogic").style.backgroundColor = "palevioletred";}
 	if(Location_Logic.shadow18 == true) {document.getElementById("shadowLogic").style.backgroundColor = "chartreuse";} else {document.getElementById("shadowLogic").style.backgroundColor = "palevioletred";}**/
-	
-	
-	
-	
+
+
+
+
 	if (Game.forest_checks_remaining >=0 && (Game.forest_checks_remaining < Game.forest_logically_accessible)) {Game.logically_accessible -= (Game.forest_logically_accessible - Game.forest_checks_remaining);}
 	if (Game.fire_checks_remaining >=0 && (Game.fire_checks_remaining < Game.fire_logically_accessible)) {Game.logically_accessible -= (Game.fire_logically_accessible - Game.fire_checks_remaining);}
 	if (Game.water_checks_remaining >=0 && (Game.water_checks_remaining < Game.water_logically_accessible)) {Game.logically_accessible -= (Game.water_logically_accessible - Game.water_checks_remaining);}
@@ -2615,8 +2615,8 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if (Game.gtg_checks_remaining >=0 && (Game.gtg_checks_remaining < Game.gtg_logically_accessible)) {Game.logically_accessible -= (Game.gtg_logically_accessible - Game.gtg_checks_remaining);}
 	if (Game.well_checks_remaining >=0 && (Game.well_checks_remaining < Game.well_logically_accessible)) {Game.logically_accessible -= (Game.well_logically_accessible - Game.well_checks_remaining);}
 	if (Game.ganons_checks_remaining >=0 && (Game.ganons_checks_remaining < Game.ganons_logically_accessible)) {Game.logically_accessible -= (Game.ganons_logically_accessible - Game.ganons_checks_remaining);}
-	
-	
+
+
 	if (Game.bomb_bag1) {if(document.getElementById("dod_req1") != null) {document.getElementById("dod_req1").style.opacity =1; } if(document.getElementById("sha_req4") != null) {document.getElementById("sha_req4").style.opacity =1; } if(document.getElementById("spi_req3") != null) {document.getElementById("spi_req3").style.opacity =1; }}
 	if (Game.magic1) {document.getElementById("gan_req1").style.opacity=1; if(document.getElementById("sha_req2") != null) {document.getElementById("sha_req2").style.opacity =1; }}
 	if (Game.light_arrows) {document.getElementById("gan_req2").style.opacity=1;}
@@ -2633,7 +2633,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if (Game.mirror_shield) {if(document.getElementById("spi_req2") != null) {document.getElementById("spi_req2").style.opacity =1; }}
 	if (Game.dins_fire) {if(document.getElementById("sha_req1") != null) {document.getElementById("sha_req1").style.opacity =1; }}
 	if (Game.hover_boots) {if(document.getElementById("sha_req3") != null) {document.getElementById("sha_req3").style.opacity =1; }}
-	
+
 	if (!Game.bomb_bag1) {if(document.getElementById("dod_req1") != null) {document.getElementById("dod_req1").style.opacity =.2; } if(document.getElementById("sha_req4") != null) {document.getElementById("sha_req4").style.opacity =.2; } if(document.getElementById("spi_req3") != null) {document.getElementById("spi_req3").style.opacity =.2; }}
 	if (!Game.magic1) {document.getElementById("gan_req1").style.opacity = .2; if(document.getElementById("sha_req2") != null) {document.getElementById("sha_req2").style.opacity =.2; }}
 	if (!Game.light_arrows) {document.getElementById("gan_req2").style.opacity = .2;}
@@ -2650,7 +2650,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if (!Game.mirror_shield) {if(document.getElementById("spi_req2") != null) {document.getElementById("spi_req2").style.opacity =.2; }}
 	if (!Game.dins_fire) {if(document.getElementById("sha_req1") != null) {document.getElementById("sha_req1").style.opacity =.2; }}
 	if (!Game.hover_boots) {if(document.getElementById("sha_req3") != null) {document.getElementById("sha_req3").style.opacity =.2; }}
-	
+
 	if (Game.lullaby) {document.getElementById("lullabyimg").style.opacity =1;}
 	if (Game.eponas) {document.getElementById("eponasimg").style.opacity =1;}
 	if (Game.sarias) {document.getElementById("sariasimg").style.opacity =1;}
@@ -2663,7 +2663,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if (Game.requiem) {document.getElementById("requiemimg").style.opacity =1;}
 	if (Game.nocturne) {document.getElementById("nocturneimg").style.opacity =1;}
 	if (Game.prelude) {document.getElementById("preludeimg").style.opacity =1;}
-	
+
 	if (Game.bottle1 || Logic.bottle) {document.getElementById("bottleimg").style.opacity =1;}
 	if (Game.farores_wind) {document.getElementById("faroresimg").style.opacity =1;}
 	if (Game.fire_arrows) {document.getElementById("firearrowsimg").style.opacity =1;}
@@ -2671,14 +2671,14 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if (Game.lens_of_truth) {document.getElementById("lensimg").style.opacity =1;}
 	if (Game.strength3) {document.getElementById("goldengauntletsimg").style.opacity =1;}
 	if (Game.slingshot1) {document.getElementById("slingshotimg").style.opacity =1;}
-	
+
 	/**if (Game.minuet) {document.getElementById("min_note").style.opacity = 1;}
 	if (Game.bolero) {document.getElementById("bol_note").style.opacity = 1;}
 	if (Game.serenade) {document.getElementById("ser_note").style.opacity = 1;}
 	if (Game.requiem) {document.getElementById("req_note").style.opacity = 1;}
 	if (Game.nocturne) {document.getElementById("noc_note").style.opacity = 1;}
 	if (Game.prelude) {document.getElementById("pre_note").style.opacity = 1;}*/
-	
+
 	if (document.getElementById("deku_queen_gohma") == null) {if (document.getElementById("text_deku") != null) {document.getElementById("text_deku").style.opacity=.2}}
 	if (document.getElementById("dodongos_king_dodongo") == null) {if (document.getElementById("text_dod") != null) {document.getElementById("text_dod").style.opacity=.2}}
 	if (document.getElementById("jabu_barinade") == null) {if (document.getElementById("text_jabu") != null) {document.getElementById("text_jabu").style.opacity=.2}}
@@ -2688,7 +2688,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if (document.getElementById("spirit20") == null) {if (document.getElementById("text_spirit") != null) {document.getElementById("text_spirit").style.opacity=.2}}
 	if (document.getElementById("shadow18") == null) {if (document.getElementById("text_shadow") != null) {document.getElementById("text_shadow").style.opacity=.2}}
 	if (document.getElementById("text_pocket") != null) {document.getElementById("text_pocket").style.opacity=.2}
-	
+
 	if (document.getElementById("kokiri_break") != null && document.getElementById("mido_1") == null && document.getElementById("mido_2") == null && document.getElementById("mido_3") == null && document.getElementById("mido_4") == null && document.getElementById("kokiri_sword") == null && document.getElementById("kokiri_song_of_storms") == null) {document.getElementById("normalColumn1").removeChild(document.getElementById("kokiri_break"));}
 	if (document.getElementById("ranch_break") != null && document.getElementById("talons_chickens") == null && document.getElementById("back_of_ranch") == null) {document.getElementById("normalColumn1").removeChild(document.getElementById("ranch_break"));}
 	if (document.getElementById("field_break") != null && document.getElementById("hyrule_forest_boulder") == null && document.getElementById("hyrule_open_grotto") == null && document.getElementById("hyrule_hp_scrub") == null && document.getElementById("hyrule_boulder_of_destiny") == null && document.getElementById("hyrule_tektite_grotto") == null) {document.getElementById("normalColumn1").removeChild(document.getElementById("field_break"));}
@@ -2712,7 +2712,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	if (document.getElementById("colossus_break") != null && document.getElementById("colossus_bean") == null && document.getElementById("colossus_fairy") == null) {document.getElementById("normalColumn3").removeChild(document.getElementById("colossus_break"));}
 	if (document.getElementById("wasteland_break") != null && document.getElementById("wasteland") == null) {document.getElementById("normalColumn3").removeChild(document.getElementById("wasteland_break"));}
 	if (document.getElementById("fortress_break") != null && document.getElementById("gerudo_roof") == null && document.getElementById("gerudo_archery_1") == null && document.getElementById("gerudo_archery_2") == null) {document.getElementById("normalColumn3").removeChild(document.getElementById("fortress_break"));}
-	
+
 		/*
 	if(!Game.song_of_storms) {Game.logically_accessible -=11;}
 	else{
@@ -2728,7 +2728,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 		if (!Game.can_see) {Game.logically_accessible -=4*.75}
 		}
 	}
-	
+
 		Game.logically_accessible +=1;
 		Game.logically_accessible -=11;
 		if (Game.can_enter_shadow) {Game.logically_accessible += 2*.58}
@@ -2743,7 +2743,7 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 		if (Game.can_ride_shadow_boat){Game.logically_accessible += 3*.72*mult3}
 		if (Game.can_beat_shadow_boss) {Game.logically_accessible += 1*mult4}
 	*/
-	
+
 	Game.logically_accessible=Game.logically_accessible.toFixed(0);
 	d = new Date();
 	timeFuture = d.getTime();
@@ -2766,11 +2766,11 @@ if((tempstring.length == 6 && document.getElementById("markStones") == null) || 
 	//document.getElementById("time_difference").innerHTML="" + tMinutes + "m" + tSeconds + "s";
 	//document.getElementById("skip_req").innerHTML="" + rMinutes + "m" + rSeconds + "s";
 	//document.getElementById("skip_value").innerHTML="" + sMinutes + "m" + sSeconds + "s";
-    
+
 }
-        
-        
-        
+
+
+
 
 var Check={};
 var Game={};
@@ -2825,21 +2825,21 @@ var d = new Date();
 var initialTime = d.getTime();
 var goodCheckPercent = 0;
 var timeStart = d.getTime();
-var timeCurrent;	
+var timeCurrent;
 var timeFuture;
 var timeFinal;
 var timeLost =0;
 var tMinutes = 0;
 var tSeconds = 0;
 //document.getElementById("go_input").value = 9;
-	
+
 	Person.type = "soli";
 	Logic.brackets = false;
-	
+
 	document.getElementById("text_gen_med1").style.color = "yellow";
 	document.getElementById("text_gen_med2").style.color = "yellow";
 	document.getElementById("text_gen_med3").style.color = "yellow";
-	
+
 	Game.kokiri_sword = false;
 	Game.farores_wind = false;
 	Game.slingshot1= false;
@@ -2894,7 +2894,7 @@ var tSeconds = 0;
 	Game.requiem = false;
 	Game.nocturne = false;
 	Game.prelude = false;
-	
+
 	Game.min_forest_keys=0;
 	Game.current_forest_keys=0;
 	Game.forest_keys = 0;
@@ -2918,7 +2918,7 @@ var tSeconds = 0;
 	Game.gtg_keys = 0;
 	Game.min_well_keys=0;
 	Game.current_well_keys=0;
-	Game.well_keys = 0;		
+	Game.well_keys = 0;
 	Game.deku_checks_remaining = 7;
 	Game.dodongos_checks_remaining = 7;
 	Game.jabu_checks_remaining = 4;
@@ -2930,7 +2930,7 @@ var tSeconds = 0;
 	Game.gtg_checks_remaining = 13;
 	Game.well_checks_remaining = 11;
 	Game.ganons_checks_remaining = 13;
-	
+
 	Game.checks_remaining=195;
 	Game.logically_accessible=35;
 	Game.forest_logically_accessible=0;
@@ -2941,7 +2941,7 @@ var tSeconds = 0;
 	Game.gtg_logically_accessible=0;
 	Game.well_logically_accessible=0;
 	Game.ganons_logically_accessible=0;
-	
+
 	Game.bomb_bag_img= "./images/explosive505050.png";
 	Game.letter_img= "./images/letter505050.png";
 	Game.boomerang_img= "./images/boomerang505050.png";
@@ -2960,9 +2960,9 @@ var tSeconds = 0;
 	Game.hover_boots_img= "./images/hovers505050.png";
 	Game.theme = "dark";
 	Game.themeChange = true;
-	
+
 	Game.has_chus = false;
-	
+
 	var Locations = [
 		"mido_1", "mido_2", "mido_3", "mido_4", "kokiri_sword", "kokiri_song_of_storms",
 		"talons_chickens", "back_of_ranch",
@@ -3000,7 +3000,7 @@ var tSeconds = 0;
 		"well1", "well2", "well3", "well4", "well5", "well6", "well7", "well8", "well9", "well10", "well11", "well12", "well13", "well14",
 		"zeldasSpot", "eponasSpot", "sariasSpot", "stormsSpot", "sunsSpot", "boleroSpot", "minuetSpot", "requiemSpot", "serenadeSpot", "preludeSpot", "nocturneSpot", "oot"
 		];
-		
+
 		var Names = [
 		"Kokiri: Mido's 1", "Kokiri: Mido's 2", "Kokiri: Mido's 3", "Kokiri: Mido's 4", "Kokiri: Sword", "Kokiri: SoS",
 		"Ranch: T's Chicks", "Ranch: Back",
@@ -3038,11 +3038,11 @@ var tSeconds = 0;
 		"Well: Fake Right", "Well: Center Small", "Well: Back Bomb", "Well: Water Left", "Well: Freestanding", "Well: Center Big", "Well: Fake Left", "Well: Front Bomb", "Well: Water Front", "Well: Dead Hand", "Well: Invisible", "Well: Locked 1", "Well: Locked 2", "Well: Basement",
 		"Zelda", "Malon", "Saria", "Windmill", "Grave", "Crater", "Meadow", "Colossus", "Ice", "1 Medallion", "3 Medallion", "Ocarina of Time"
 		];
-		
+
 	var hintStones = ["Crater: Hint", "Crater: Gr. Hint", "Trail: Gr. Hint", "Trail: Bigo Hint", "Colossus: Hint", "Dodongos: Hint", "Field: Open Gr. Hint", "Field: Remote Gr. Hint", "Field: Destiny Hint", "Valley: Hint", "Hylia: After Valley Hint", "Hylia: Back Right Hint", "Hylia: Back Left Hint", "Hyrule Castle: First Hint", "Hyrule Castle: Second Hint", "Temple of Time: First Hint", "Temple of Time: Second Hint", "Temple of Time: Third Hint", "Temple of Time: Fourth Hint", "Kakariko: Gr. Hint", "Kokiri: Left Deku Hint", "Kokiri: Right Deku Hint", "Kokiri: Gr. Hint", "Kokiri: LW Hint", "Lost Woods: Br. Hint", "Lost Woods: Gr. Hint", "SFM: Sarias Hint", "SFM: Maze 1 Hint", "SFM: Maze 2 Hint", "River: Gr. Hint", "River: Plateau Hint", "River: By ZD Hint", "Domain: Hint", "Fountain: Jabu Hint", "Fountain: By Fairy Hint", "Goron City: Maze Hint", "Goron City: Medigoron Hint", "Graveyard: Hint", "Hyrule Castle: Storms Hint", "Field: Hammer Hint"];
-	
+
 	var checkSummary = ["farores_wind", "slingshot1", "slingshot2", "slingshot3", "boomerang", "scale1", "scale2", "rutos_letter", "bottle1", "bottle2", "bottle3", "bomb_bag1", "bomb_bag2", "bomb_bag3", "hammer", "bow1", "bow2", "bow3", "hookshot1", "hookshot2", "strength1", "strength2", "strength3", "mirror_shield", "magic1", "magic2", "iron_boots", "hover_boots", "wallet1", "wallet2", "goron_tunic", "zora_tunic", "dins_fire", "fire_arrows", "lens_of_truth", "trade", "light_arrows", "text_zeldasSpot", "text_eponasSpot", "text_sariasSpot", "text_sunsSpot", "text_oot", "text_stormsSpot", "text_minuetSpot", "text_boleroSpot", "text_serenadeSpot", "text_requiemSpot", "text_nocturneSpot", "text_preludeSpot",];
-	
+
 	Logic.bottle = false;
 	Logic.big_poe = false;
 	Logic.scale1 = false;
@@ -3065,7 +3065,7 @@ var tSeconds = 0;
 	Logic.slingshot3 = false;
 	Logic.wallet1 = false;
 	Logic.wallet2 = false;
-	
+
 	Logic.kokiri_sword = false;
 	Logic.farores_wind = false;
 	Logic.slingshot= false;
@@ -3121,7 +3121,7 @@ var tSeconds = 0;
 	Logic.kokiri_emerald = false;
 	Logic.goron_ruby = false;
 	Logic.zora_sapphire = false;
-	
+
 	Logic.forest_medallion_location = "unknown";
 	Logic.fire_medallion_location  = "unknown";
 	Logic.water_medallion_location  = "unknown";
@@ -3131,7 +3131,7 @@ var tSeconds = 0;
 	Logic.emerald = "unknown";
 	Logic.ruby  = "unknown";
 	Logic.sapphire  = "unknown";
-	
+
 	Logic.min_forest_keys=0;
 	Logic.current_forest_keys=0;
 	Logic.forest_keys = 0;
@@ -3169,20 +3169,20 @@ var tSeconds = 0;
 	Logic.forced_water_boss_key = false;
 	Logic.forced_spirit_boss_key = false;
 	Logic.forced_shadow_boss_key = false;
-	
+
 	Logic.forest_boss_key = false;
 	Logic.fire_boss_key = false;
 	Logic.water_boss_key = false;
 	Logic.spirit_boss_key = false;
 	Logic.shadow_boss_key = false;
 	Logic.ganons_boss_key = false;
-	   
+
 	var WotH = new Array(34).fill(0);
     var checkedYet = new Array(256).fill(false);
 	var readYet = new Array(42).fill(false);
 	var AreaAge = new Array(34).fill(0);
 	var textBlock = '';
-	
+
 	for (var i = 0; i < 244; i++) {
 		Check[Location[i]] = "unknown";
 	}
@@ -3192,7 +3192,7 @@ function junk(x) {
 	var str = x.id;
 	str = str.substring('text_'.length);
 	var temp = Locations.indexOf(str);
-	
+
 	if(type == 0) {
 		if(str.startsWith("forest") && Game.forest_checks_remaining != 0) {Game.forest_checks_remaining -=1;}
 		else if(str.startsWith("fire") && Game.fire_checks_remaining != 0 && str != "fire_grave") {Game.fire_checks_remaining -=1;}
@@ -3210,7 +3210,7 @@ function junk(x) {
 		if (temp == 113 && Game.jabu_checks_remaining == 0) {Game.checks_remaining +=1;}
 		Game.checks_remaining -= 1;
 	}
-	
+
 	else if(type == 1) {
 		if(str.startsWith("forest") && !Game.forest_boss_key) {Game.forest_boss_key = true; Location.forest_boss_key = str;}
 		else if(str.startsWith("fire") && !Game.fire_boss_key) {Game.fire_boss_key = true; Location.fire_boss_key = str;}
@@ -3221,7 +3221,7 @@ function junk(x) {
 		else {return;}
 		Check[str]="boss_key";
 	}
-	
+
 	else if (type == 2) {
 		if(str.startsWith("forest") && Game.current_forest_keys < 5) {Game.current_forest_keys +=1;}
 		else if(str.startsWith("fire") && Game.current_fire_keys < 8) {Game.current_fire_keys +=1;}
@@ -3238,13 +3238,13 @@ function junk(x) {
 		Check[str]="junk";
 		Game.checks_remaining -=1;
 	}
-	
+
 	var delete1 = str;
 	var delete2 = "text_" + str;
 	var delete3 = "br_" + str;
-	
+
 	if(temp < 38) {var parent = document.getElementById("normalColumn1");} else if (temp < 76) {var parent = document.getElementById("normalColumn2");} else if (temp < 114) {var parent = document.getElementById("normalColumn3");} else if (temp < 154) {var parent = document.getElementById("dung1");} else if (temp < 208) {var parent = document.getElementById("dung2");} else {var parent = document.getElementById("dung3");}
-	
+
 	if (document.getElementById(delete1) !== null) {
 		var child = document.getElementById(delete1);
 		parent.removeChild(child);
@@ -3252,7 +3252,7 @@ function junk(x) {
 	if (document.getElementById(delete2) !== null) {
 		var child = document.getElementById(delete2);
 		parent.removeChild(child);
-	}	
+	}
 	if (document.getElementById(delete3) !== null) {
 		var child = document.getElementById(delete3);
 		parent.removeChild(child);
@@ -3261,7 +3261,7 @@ function junk(x) {
 		lastCheck = str;
 	}
 	Update();Update();Update();
-}	
+}
 
 function junkUltra(x) {
 	if (x.id == "forest") {var temp = 14; var temp2 = Game.forest_checks_remaining; Game.forest_checks_remaining = 0; var parent = document.getElementById("dung1"); Logic.forced_forest_keys = 5 - Game.current_forest_keys; if (Game.forest_boss_key == false) {Logic.forced_forest_boss_key = true;}}
@@ -3301,15 +3301,15 @@ function junkUltra(x) {
 		if (document.getElementById(delete5) !== null) {
 			var child = document.getElementById(delete5);
 			parent.removeChild(child);
-		}		
+		}
 		if (document.getElementById(delete6) !== null) {
 			var child = document.getElementById(delete6);
 			parent.removeChild(child);
-		} 
+		}
 		if (document.getElementById(delete7) !== null) {
 			var child = document.getElementById(delete7);
 			parent.removeChild(child);
-		} 
+		}
 		if (document.getElementById(delete8) !== null) {
 			var child = document.getElementById(delete8);
 			parent.removeChild(child);
@@ -3354,11 +3354,11 @@ if (document.getElementById(delete5) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
@@ -3402,11 +3402,11 @@ if (document.getElementById(delete5) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
@@ -3449,7 +3449,7 @@ if (document.getElementById(delete5) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
@@ -3457,7 +3457,7 @@ if (document.getElementById(delete7) !== null) {
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
-} 
+}
 Game.checks_remaining -=1;
 	Update();Update();Update();
 }
@@ -3496,7 +3496,7 @@ if (document.getElementById(delete5) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
@@ -3504,7 +3504,7 @@ if (document.getElementById(delete7) !== null) {
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
-} 
+}
 Game.checks_remaining -=1;
 	Update();Update();Update();
 }
@@ -3549,16 +3549,16 @@ if (document.getElementById(delete5) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
 }
-	
+
 	Update();Update();Update();
 }
 function junkB6(x) {
@@ -3601,11 +3601,11 @@ if (document.getElementById(delete5) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
@@ -3652,11 +3652,11 @@ if (document.getElementById(delete5) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
@@ -3691,11 +3691,11 @@ if (document.getElementById(delete3) !== null) {
 if (document.getElementById(delete6) !== null) {
 	var child = document.getElementById(delete6);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete7) !== null) {
 	var child = document.getElementById(delete7);
 	parent.removeChild(child);
-} 
+}
 if (document.getElementById(delete8) !== null) {
 	var child = document.getElementById(delete8);
 	parent.removeChild(child);
@@ -3705,7 +3705,7 @@ if (document.getElementById(delete8) !== null) {
 function highlight(x) {
 	if (x.id == "silverscaleimg") {
 		if (Game.scale2 == true) {
-			Game.scale1 = false; 
+			Game.scale1 = false;
 			Game.scale2 = false;
 			document.getElementById(x.id).src = Game.silver_scale_img;
 			x.style.opacity = .2;
@@ -3713,7 +3713,7 @@ function highlight(x) {
 		else if (x.style.opacity == 1) {
 			Game.scale2 = true;
 			document.getElementById(x.id).src = Game.golden_scale_img;
-		} 
+		}
 		else {
 			Game.scale1 = true;
 			x.style.opacity = 1;
@@ -3800,14 +3800,14 @@ function highlight(x) {
 		if (document.getElementById(x.id).src.endsWith(Game.nocturne_img.substring(2))){Game.nocturne = false;}
 		if (document.getElementById(x.id).src.endsWith(Game.prelude_img.substring(2))){Game.prelude = false;}
 	}
-	
-	
+
+
 	if (x.id == "fir_med" && x.style.opacity==1) {Logic.fire_medallion = true;}
 	if (x.id == "wat_med" && x.style.opacity==1) {Logic.water_medallion = true;}
 	if (x.id == "spi_med" && x.style.opacity==1) {Logic.spirit_medallion = true;}
 	if (x.id == "sha_med" && x.style.opacity==1) {Logic.shadow_medallion = true;}
 	if (x.id == "lit_med" && x.style.opacity==1) {Logic.light_medallion = true;}
-	
+
 	if (x.id == "kok_eme" && x.style.opacity==1) {Logic.kokiri_emerald = true;}
 	if (x.id == "gor_rub" && x.style.opacity==1) {Logic.goron_ruby = true;}
 	if (x.id == "zor_sap" && x.style.opacity==1) {Logic.zora_sapphire = true;}
@@ -3867,7 +3867,7 @@ function changeTheme() {
 	Game.themeChange = true;
 	Update();
 	}
-	
+
 function whoAmI() {
 	if(Person.type == "soli") {
 		Person.type = "normie";
@@ -3885,7 +3885,7 @@ function whoAmI() {
 		Update();
 	}
 }
-	
+
 function identifyMedal(x) {
 	if (x.style.color == "yellow") {
 		x.style.color = "rgb(238, 130, 238)";
@@ -3928,15 +3928,15 @@ function enableChus() {
             document.createElement("a")
         );
         var textToWrite = textBlock;
-        a.download = "route.txt"; 
-        textToWrite = textToWrite.replace(/\n/g, "%0D%0A"); 
+        a.download = "route.txt";
+        textToWrite = textToWrite.replace(/\n/g, "%0D%0A");
         a.href = "data:text/plain," + textToWrite;
         a.click();
     }
-	
+
 function isUpperCase(str) {
     return str === str.toUpperCase();
-}	
+}
 
 setInterval(Update,250);
 Update();Update();Update();
