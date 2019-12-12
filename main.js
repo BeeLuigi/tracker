@@ -1530,10 +1530,11 @@ for (var i = 1; i <= 34; i++) {
 		hinted = false;
 	}
 }
-
+/*
 if (Game.magic1 && Game.light_arrows && Game.bow1 && Game.ganons_checks_remaining > 0) {
 	document.getElementById("ganons").click();
 }
+*/
 
 if (document.getElementById("markStones") != null) {
 	var tempstring = document.getElementById("markStones").value;
